@@ -7,6 +7,10 @@
 //
 
 import UIKit
+import Firebase
+import FBSDKCoreKit
+import FBSDKShareKit
+import FBSDKLoginKit
 
 class LoginVC: UIViewController {
 
@@ -21,6 +25,40 @@ class LoginVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func submit(sender: AnyObject) {
+        
+        let ref = Firebase(url:"https://liftappdb.firebaseio.com/")
+        
+        let facebookLogin = FBSDKLoginManager()
+        facebookLogin.logInWithReadPermissions(["email"],
+            fromViewController:self,
+            handler: {
+                (facebookResult, facebookError) -> Void in
+        if facebookError != nil
+            {
+                print("Facebook login failed. Error \(facebookError)")
+            }
+        else if facebookResult.isCancelled
+        {
+                    print("Facebook login was cancelled.")
+        }
+        else
+        {
+            let accessToken = FBSDKAccessToken.currentAccessToken().tokenString
+            ref.authWithOAuthProvider("facebook", token: accessToken, withCompletionBlock: { error, authData in
+            if error != nil
+            {
+                print("Login failed. \(error)")
+            }
+            else
+            {
+                print("Logged in! \(authData)")
+            }})
+        }
+                
+        })
+        
+    }
 
     /*
     // MARK: - Navigation

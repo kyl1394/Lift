@@ -15,6 +15,9 @@
 		2990394E1C78208B00C9C02E /* LiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2990394D1C78208B00C9C02E /* LiftTests.swift */; };
 		299039591C78208B00C9C02E /* LiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299039581C78208B00C9C02E /* LiftUITests.swift */; };
 		299039671C78232000C9C02E /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299039661C78232000C9C02E /* LoginVC.swift */; };
+		299039771C78312800C9C02E /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 299039761C78312800C9C02E /* FBSDKCoreKit.framework */; };
+		299039791C78393100C9C02E /* fb_login.png in Resources */ = {isa = PBXBuildFile; fileRef = 299039781C78393100C9C02E /* fb_login.png */; };
+		BD869080ED2FCE32AB2C4CBA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C03120E6D2F47F0862AC9678 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14CC8AB11ED3999A72D23B79 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		299039351C78208B00C9C02E /* Lift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		299039381C78208B00C9C02E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2990393A1C78208B00C9C02E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +53,16 @@
 		299039581C78208B00C9C02E /* LiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiftUITests.swift; sourceTree = "<group>"; };
 		2990395A1C78208B00C9C02E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		299039661C78232000C9C02E /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		299039681C78291200C9C02E /* libFirebase.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFirebase.a; path = "Pods/../build/Debug-iphoneos/libFirebase.a"; sourceTree = "<group>"; };
+		299039691C78291200C9C02E /* libPods-Lift.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-Lift.a"; path = "Pods/../build/Debug-iphoneos/libPods-Lift.a"; sourceTree = "<group>"; };
+		2990396A1C78291200C9C02E /* libPods-LiftTests.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-LiftTests.a"; path = "Pods/../build/Debug-iphoneos/libPods-LiftTests.a"; sourceTree = "<group>"; };
+		2990396B1C78291200C9C02E /* libPods-LiftUITests.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-LiftUITests.a"; path = "Pods/../build/Debug-iphoneos/libPods-LiftUITests.a"; sourceTree = "<group>"; };
+		299039701C78298D00C9C02E /* Firebase-dummy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Firebase-dummy.m"; path = "Pods/Target Support Files/Firebase/Firebase-dummy.m"; sourceTree = "<group>"; };
+		299039721C7829FB00C9C02E /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
+		299039761C78312800C9C02E /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "FacebookSDKs-iOS-20160210/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
+		299039781C78393100C9C02E /* fb_login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fb_login.png; path = Assets.xcassets/fb_login.png; sourceTree = "<group>"; };
+		3DF84253691BDDB5D48D7D04 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		C03120E6D2F47F0862AC9678 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD869080ED2FCE32AB2C4CBA /* libPods.a in Frameworks */,
+				299039771C78312800C9C02E /* FBSDKCoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +92,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0503E12D0A07A530F6A8CE9B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				14CC8AB11ED3999A72D23B79 /* Pods.debug.xcconfig */,
+				3DF84253691BDDB5D48D7D04 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		2990392C1C78208B00C9C02E = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +108,8 @@
 				2990394C1C78208B00C9C02E /* LiftTests */,
 				299039571C78208B00C9C02E /* LiftUITests */,
 				299039361C78208B00C9C02E /* Products */,
+				0503E12D0A07A530F6A8CE9B /* Pods */,
+				9BE61969B9156A1CD7A8B5A2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,12 +127,13 @@
 			isa = PBXGroup;
 			children = (
 				299039381C78208B00C9C02E /* AppDelegate.swift */,
+				299039661C78232000C9C02E /* LoginVC.swift */,
 				2990393A1C78208B00C9C02E /* ViewController.swift */,
 				2990393C1C78208B00C9C02E /* Main.storyboard */,
+				299039781C78393100C9C02E /* fb_login.png */,
 				2990393F1C78208B00C9C02E /* Assets.xcassets */,
 				299039411C78208B00C9C02E /* LaunchScreen.storyboard */,
 				299039441C78208B00C9C02E /* Info.plist */,
-				299039661C78232000C9C02E /* LoginVC.swift */,
 			);
 			path = Lift;
 			sourceTree = "<group>";
@@ -128,6 +156,21 @@
 			path = LiftUITests;
 			sourceTree = "<group>";
 		};
+		9BE61969B9156A1CD7A8B5A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				299039761C78312800C9C02E /* FBSDKCoreKit.framework */,
+				299039721C7829FB00C9C02E /* Firebase.framework */,
+				299039701C78298D00C9C02E /* Firebase-dummy.m */,
+				299039681C78291200C9C02E /* libFirebase.a */,
+				299039691C78291200C9C02E /* libPods-Lift.a */,
+				2990396A1C78291200C9C02E /* libPods-LiftTests.a */,
+				2990396B1C78291200C9C02E /* libPods-LiftUITests.a */,
+				C03120E6D2F47F0862AC9678 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +178,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2990395D1C78208B00C9C02E /* Build configuration list for PBXNativeTarget "Lift" */;
 			buildPhases = (
+				9AA3BC3B1A4C1E738F0FC1F1 /* Check Pods Manifest.lock */,
 				299039311C78208B00C9C02E /* Sources */,
 				299039321C78208B00C9C02E /* Frameworks */,
 				299039331C78208B00C9C02E /* Resources */,
+				F1CED5F52D2C201550534E30 /* Embed Pods Frameworks */,
+				44C815D1287693F341339194 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -235,6 +281,7 @@
 				299039431C78208B00C9C02E /* LaunchScreen.storyboard in Resources */,
 				299039401C78208B00C9C02E /* Assets.xcassets in Resources */,
 				2990393E1C78208B00C9C02E /* Main.storyboard in Resources */,
+				299039791C78393100C9C02E /* fb_login.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +300,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		44C815D1287693F341339194 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9AA3BC3B1A4C1E738F0FC1F1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F1CED5F52D2C201550534E30 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		299039311C78208B00C9C02E /* Sources */ = {
@@ -399,10 +494,20 @@
 		};
 		2990395E1C78208B00C9C02E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14CC8AB11ED3999A72D23B79 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/FacebookSDKs-iOS-20160210",
+				);
 				INFOPLIST_FILE = Lift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Jordan-Kauffman.Lift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -410,10 +515,20 @@
 		};
 		2990395F1C78208B00C9C02E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DF84253691BDDB5D48D7D04 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/FacebookSDKs-iOS-20160210",
+				);
 				INFOPLIST_FILE = Lift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Jordan-Kauffman.Lift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -486,6 +601,7 @@
 				2990395F1C78208B00C9C02E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		299039601C78208B00C9C02E /* Build configuration list for PBXNativeTarget "LiftTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +610,7 @@
 				299039621C78208B00C9C02E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		299039631C78208B00C9C02E /* Build configuration list for PBXNativeTarget "LiftUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +619,7 @@
 				299039651C78208B00C9C02E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
