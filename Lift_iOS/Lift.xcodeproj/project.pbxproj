@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		299039391C78208B00C9C02E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299039381C78208B00C9C02E /* AppDelegate.swift */; };
-		2990393B1C78208B00C9C02E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2990393A1C78208B00C9C02E /* ViewController.swift */; };
 		2990393E1C78208B00C9C02E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2990393C1C78208B00C9C02E /* Main.storyboard */; };
 		299039401C78208B00C9C02E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2990393F1C78208B00C9C02E /* Assets.xcassets */; };
 		299039431C78208B00C9C02E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 299039411C78208B00C9C02E /* LaunchScreen.storyboard */; };
@@ -17,6 +16,8 @@
 		299039671C78232000C9C02E /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299039661C78232000C9C02E /* LoginVC.swift */; };
 		299039771C78312800C9C02E /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 299039761C78312800C9C02E /* FBSDKCoreKit.framework */; };
 		299039791C78393100C9C02E /* fb_login.png in Resources */ = {isa = PBXBuildFile; fileRef = 299039781C78393100C9C02E /* fb_login.png */; };
+		2990397B1C783CFA00C9C02E /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2990397A1C783CFA00C9C02E /* FBSDKLoginKit.framework */; };
+		2990397D1C78469F00C9C02E /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2990397C1C78469F00C9C02E /* ProfileVC.swift */; };
 		BD869080ED2FCE32AB2C4CBA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C03120E6D2F47F0862AC9678 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -41,7 +42,6 @@
 		14CC8AB11ED3999A72D23B79 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		299039351C78208B00C9C02E /* Lift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		299039381C78208B00C9C02E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2990393A1C78208B00C9C02E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2990393D1C78208B00C9C02E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2990393F1C78208B00C9C02E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		299039421C78208B00C9C02E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,6 +61,8 @@
 		299039721C7829FB00C9C02E /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
 		299039761C78312800C9C02E /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "FacebookSDKs-iOS-20160210/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
 		299039781C78393100C9C02E /* fb_login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fb_login.png; path = Assets.xcassets/fb_login.png; sourceTree = "<group>"; };
+		2990397A1C783CFA00C9C02E /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "FacebookSDKs-iOS-20160210/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
+		2990397C1C78469F00C9C02E /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		3DF84253691BDDB5D48D7D04 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		C03120E6D2F47F0862AC9678 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -72,6 +74,7 @@
 			files = (
 				BD869080ED2FCE32AB2C4CBA /* libPods.a in Frameworks */,
 				299039771C78312800C9C02E /* FBSDKCoreKit.framework in Frameworks */,
+				2990397B1C783CFA00C9C02E /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,7 +131,7 @@
 			children = (
 				299039381C78208B00C9C02E /* AppDelegate.swift */,
 				299039661C78232000C9C02E /* LoginVC.swift */,
-				2990393A1C78208B00C9C02E /* ViewController.swift */,
+				2990397C1C78469F00C9C02E /* ProfileVC.swift */,
 				2990393C1C78208B00C9C02E /* Main.storyboard */,
 				299039781C78393100C9C02E /* fb_login.png */,
 				2990393F1C78208B00C9C02E /* Assets.xcassets */,
@@ -159,6 +162,7 @@
 		9BE61969B9156A1CD7A8B5A2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2990397A1C783CFA00C9C02E /* FBSDKLoginKit.framework */,
 				299039761C78312800C9C02E /* FBSDKCoreKit.framework */,
 				299039721C7829FB00C9C02E /* Firebase.framework */,
 				299039701C78298D00C9C02E /* Firebase-dummy.m */,
@@ -354,7 +358,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2990393B1C78208B00C9C02E /* ViewController.swift in Sources */,
+				2990397D1C78469F00C9C02E /* ProfileVC.swift in Sources */,
 				299039391C78208B00C9C02E /* AppDelegate.swift in Sources */,
 				299039671C78232000C9C02E /* LoginVC.swift in Sources */,
 			);

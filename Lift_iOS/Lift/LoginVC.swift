@@ -14,6 +14,8 @@ import FBSDKLoginKit
 
 class LoginVC: UIViewController {
 
+    var authData : FAuthData!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -53,10 +55,24 @@ class LoginVC: UIViewController {
             else
             {
                 print("Logged in! \(authData)")
+                self.authData = authData
+                self.performSegueWithIdentifier("profile", sender: sender)
             }})
         }
                 
         })
+        
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    {
+        if segue.identifier == "profile"
+        {
+            
+            let profileVC = segue.destinationViewController as! ProfileVC
+            profileVC.authData = self.authData
+            
+        }
         
     }
 

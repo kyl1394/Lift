@@ -17,23 +17,59 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kbp-o6-JrM">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kbp-o6-JrM">
                                 <rect key="frame" x="180" y="243" width="239" height="115"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="239" id="xhn-BJ-FLD"/>
+                                </constraints>
                                 <state key="normal" image="fb_login.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="Submit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Qd-kK-tvT"/>
-                                    <action selector="submit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UZB-PP-Grj"/>
+                                    <action selector="submit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xDk-Qc-uao"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.062745098040000002" green="0.58039215690000001" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Kbp-o6-JrM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="223" id="6GM-oo-xVH"/>
+                            <constraint firstItem="Kbp-o6-JrM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="JNQ-w8-6Jt"/>
+                            <constraint firstItem="Kbp-o6-JrM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PMj-cb-jrz"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <segue destination="4pC-xj-clj" kind="presentation" identifier="profile" id="J4T-VP-PIx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="283" y="360"/>
+        </scene>
+        <!--ProfileVC-->
+        <scene sceneID="Uc0-JB-LGD">
+            <objects>
+                <viewController id="4pC-xj-clj" customClass="ProfileVC" customModule="Lift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rl5-pO-UCk"/>
+                        <viewControllerLayoutGuide type="bottom" id="ruR-jg-1FY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eoh-TK-7wO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QMy-xw-pP5">
+                                <rect key="frame" x="20" y="28" width="128" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="profilePicture" destination="QMy-xw-pP5" id="EIN-7R-Frx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7LZ-lq-COv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="988" y="360"/>
         </scene>
     </scenes>
     <resources>

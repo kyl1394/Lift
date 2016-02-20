@@ -45,6 +45,10 @@
             </array>
         </dict>
     </array>
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+        <string>fbauth2</string>
+    </array>
     <key>FacebookAppID</key>
     <string>953917004692848</string>
     <key>FacebookDisplayName</key>
