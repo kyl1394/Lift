@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "60D3748CB320937286EBE40D5A54918906D1CC14",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "60D3748CB320937286EBE40D5A54918906D1CC14" : 0,
+    "C3D40D1D53AA41816D88941CF9984D51BE3B88F6" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A4E18568-823A-4239-8BC1-D47EC5AED969",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "60D3748CB320937286EBE40D5A54918906D1CC14" : "Lift\/",
+    "C3D40D1D53AA41816D88941CF9984D51BE3B88F6" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "LIFT",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "iOS\/LIFT\/LIFT.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kyl1394\/Lift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "60D3748CB320937286EBE40D5A54918906D1CC14"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jdkauffman11\/Homework.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C3D40D1D53AA41816D88941CF9984D51BE3B88F6"
+    }
+  ]
+}

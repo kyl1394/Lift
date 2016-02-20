@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--LoginVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginVC" customModule="LIFT" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WXe-fw-tS9">
+                                <rect key="frame" x="150" y="320" width="300" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="LSp-zG-ueF"/>
+                                    <constraint firstAttribute="height" constant="125" id="Sep-jD-hDX"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="fb_login.png"/>
+                                <connections>
+                                    <action selector="loginFB:" destination="BYZ-38-t0r" eventType="touchUpInside" id="enB-Zm-8PS"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="whc-lt-Wnh">
+                                <rect key="frame" x="150" y="120" width="300" height="150"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="whc-lt-Wnh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Z9F-XG-mQE"/>
+                            <constraint firstItem="WXe-fw-tS9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="k5v-Uf-uHk"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WXe-fw-tS9" secondAttribute="bottom" constant="155" id="ows-iE-QB1"/>
+                            <constraint firstItem="whc-lt-Wnh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-105" id="ujR-F2-2hd"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ZN4-Kc-NxY">
+            <objects>
+                <viewController id="NX4-S0-IcH" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hZn-ne-4eN"/>
+                        <viewControllerLayoutGuide type="bottom" id="MRT-I8-EZ8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yFP-vy-K3A">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A4Z-4Z-tRk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1218" y="234"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fb_login.png" width="480" height="230"/>
+        <image name="logo.png" width="300" height="150"/>
+    </resources>
+</document>
