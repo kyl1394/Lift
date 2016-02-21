@@ -1,26 +1,39 @@
 //
-//  TestViewController.swift
+//  ProfileVC.swift
 //  LIFT
 //
-//  Created by Jordan Kauffman on 2/20/16.
+//  Created by Jordan Kauffman on 2/21/16.
 //  Copyright © 2016 Jordan Kauffman. All rights reserved.
 //
 
 import UIKit
 
-class TestViewController: UIViewController {
-
+class ProfileVC: UIViewController {
+    var fbPic:String!
+    @IBOutlet var imageView: UIImageView!
+    
     override func viewDidLoad() {
+        print(fbPic)
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        fbPic = fbPic.stringByReplacingOccurrencesOfString("http", withString: "https", options: NSStringCompareOptions.LiteralSearch, range: nil)
+        load_image(fbPic)
     }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    func load_image(urlString:String)
+    {
+        
+        if let url = NSURL(string: urlString) {
+            if let data = NSData(contentsOfURL: url) {
+                imageView.image = UIImage(data: data)
+            }        
+        }
+        
+    }
 
     /*
     // MARK: - Navigation
@@ -33,3 +46,4 @@ class TestViewController: UIViewController {
     */
 
 }
+

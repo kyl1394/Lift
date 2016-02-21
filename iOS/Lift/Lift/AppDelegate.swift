@@ -6,6 +6,17 @@
 //  Copyright © 2016 Jordan Kauffman. All rights reserved.
 //
 
+    extension UIColor {
+        convenience init(rgb: UInt) {
+            self.init(
+                red: CGFloat((rgb & 0xFF0000) >> 16) / 255.0,
+                green: CGFloat((rgb & 0x00FF00) >> 8) / 255.0,
+                blue: CGFloat(rgb & 0x0000FF) / 255.0,
+                alpha: CGFloat(1.0)
+            )
+        }
+    }
+
 import UIKit
 import FBSDKCoreKit
 @UIApplicationMain
@@ -14,6 +25,15 @@ var window: UIWindow?
     
     func application(application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+            UITabBar.appearance().barTintColor = UIColor(rgb: 0x3A697E)
+            UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName:UIColor(rgb: 0x0EB8050)], forState: .Selected)
+            UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName:UIColor(rgb: 0xFFFFFF)], forState: .Normal)
+            UITabBar.appearance().tintColor = UIColor(rgb: 0x0EB8050)
+            
+    
+    //.setTitleTextAttributes({NSForegroundColorAttributeName:UIColor(rgb: 0x0EB8050}, forState:.Selected)
+
+            //EB8050
             return FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions:launchOptions)
     }
     
